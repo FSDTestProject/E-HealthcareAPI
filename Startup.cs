@@ -34,7 +34,7 @@ namespace PracticeAPI_Project
                 Configuration.GetConnectionString("Connection")));
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyABCHealthCare", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "eHealthCare", Version = "v1" });
             });
         }
 
@@ -45,7 +45,7 @@ namespace PracticeAPI_Project
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyABCHealthCare v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "eHealthCare v1"));
             }
 
             app.UseHttpsRedirection();
